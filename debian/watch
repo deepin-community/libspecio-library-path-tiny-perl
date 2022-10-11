@@ -1,0 +1,5 @@
+# run "uscan --report" to check or "gpb import-orig --uscan" to update
+version=4
+opts="dversionmangle=s/~dfsg\d*//,repacksuffix=~dfsg" \
+https://metacpan.org/release/Specio-Library-Path-Tiny \
+ .*/Specio-Library-Path-Tiny@ANY_VERSION@@ARCHIVE_EXT@

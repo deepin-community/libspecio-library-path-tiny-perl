@@ -1,0 +1,51 @@
+libspecio-library-path-tiny-perl (0.04-3) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Update GitHub URLs to use HTTPS.
+
+  [ Jonas Smedegaard ]
+  * Simplify rules:
+    + Stop resolve build-dependencies in rules file.
+    + Stop resolve binary package relations in rules file.
+    + Use short-form dh sequencer (not cdbs).
+      Stop build-depend on cdbs.
+  * Stop build-depend on dh-buildinfo.
+  * Set Rules-Requires-Root: no.
+  * Enable autopkgtest.
+  * Declare compliance with Debian Policy 4.3.0.
+  * Update copyright info: Extend ownership coverage of packaging.
+  * Wrap and sort control file.
+  * Generate README and README.html from README.md source.
+    Build-depend on pandoc.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 18 Jan 2019 18:14:12 +0100
+
+libspecio-library-path-tiny-perl (0.04-2) unstable; urgency=medium
+
+  * Modernize Vcs-* fields:
+    + Consistently use git (not cgit) in path.
+    + Consistently include .git suffix in path.
+  * Declare compliance with Debian Policy 4.1.1.
+  * Update watch file:
+    + Use substitution strings.
+    + Tighten dversionmangle.
+  * Modernize cdbs:
+    + Do copyright-check in maintainer script (not during build).
+    + Stop build-depend on licensecheck.
+  * Fix git-buildpackage config to filter any .git* file.
+  * Drop obsolete lintian override regarding debhelper 9.
+  * Tighten lintian overrides regarding License-Reference.
+  * Update copyright info:
+    + Use https protocol in file format URL.
+    + Extend coverage for myself.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 02 Oct 2017 16:54:11 +0200
+
+libspecio-library-path-tiny-perl (0.04-1) unstable; urgency=low
+
+  * Initial packaging release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 25 Dec 2016 20:27:23 +0100
